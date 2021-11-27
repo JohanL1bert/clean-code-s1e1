@@ -5,18 +5,19 @@
     font-family: Lato, sans-serif;
 }
 
-.img-details {
+.img-details  {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.img-details__info {
+.img-details__matrix {
     width: 100%;
 }
 
-.img-details .img-details__info {
+.img-details,
+.img-details__info {
     font-family: fantasy, cursive;
 }
 
@@ -29,6 +30,10 @@
     display: block;
     width: 500px;
     margin: 0 auto 0;
+}
+
+.adding-item-section {
+    padding: 16px 0 0 0;
 }
 
 .task-form__input {
