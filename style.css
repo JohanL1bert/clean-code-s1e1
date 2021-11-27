@@ -36,7 +36,7 @@
     padding: 16px 0 0 0;
 }
 
-.task-form__input {
+.task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
@@ -65,6 +65,7 @@ input {
     outline:none;
 }
 
+.btn-add,
 .btn-edit,
 .btn-delete {
     background: none;
@@ -76,7 +77,8 @@ input {
     cursor: pointer;
 }
 
-.btn-edit,
+.btn-add:hover, 
+.btn-edit:hover,
 .btn-delete:hover {
     color: #3a3A3a;
 }
@@ -110,9 +112,9 @@ input {
     color: #888;
 }
 
-.task-form__input,
-.incomplete-item__input,
-.edit-mode__input,
+.task-form__input:focus,
+.incomplete-item__input:focus,
+.edit-mode__input:focus,
 .completed-item__input:focus {
     color: #333;
 }
