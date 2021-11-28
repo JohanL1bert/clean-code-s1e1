@@ -15,41 +15,41 @@
       <div class="adding-item-section">
         <h3 class="task-input">Add Item</h3>
         <div class="task-form">
-          <input class="task-form__input task" type="text">
+          <input id="task-form__input" class="task-form__input input-form blank-item" type="text">
           <button class="btn-add">Add</button>
         </div>
      </div>
      <p></p>
     <h3 class="todo-text">Todo</h3>
-    <ul class="incomplete-tasks">
-      <li class="incomplete-item">
+    <ul id="incomplete-tasks" class="incomplete-tasks tasks">
+      <li class="task-item">
         <input class="item-checkbox" type="checkbox">
-        <label class="incomplete-item__task task">Pay Bills</label>
-        <input class="incomplete-item__input" type="text">
+        <label class="blank-item item-label">Pay Bills</label>
+        <input class="blank-item input-form" type="text">
         <button class="btn-edit">Edit</button>
         <button class="btn-delete">
-          <img class="btn-delete-icon" src="./remove.svg">
+          <img class="btn-delete__icon" src="./remove.svg">
         </button>
       </li>
-      <li class="edit-mode">
+      <li class="edit-mode task-item">
         <input class="item-checkbox" type="checkbox">
-        <label class="edit-mode__task task">Go Shopping</label>
-        <input class="edit-mode__input task" type="text" value="Go Shopping">
+        <label class="blank-item item-label">Go Shopping</label>
+        <input class="blank-item input-form" type="text" value="Go Shopping">
         <button class="btn-edit">Save</button>
         <button class="btn-delete">
-          <img class="btn-delete-icon" src="./remove.svg">
+          <img class="btn-delete__icon" src="./remove.svg">
         </button>
       </li>
     </ul>
     <h3 class="complete-text">Completed</h3>
-    <ul class="completed-tasks">
-      <li class="completed-item">
+    <ul id="completed-tasks" class="completed-tasks tasks">
+      <li class="task-item">
         <input class="item-checkbox" type="checkbox" checked>
-        <label class="completed-item__task task">See the Doctor</label>
-        <input class="completed-item__input" type="text">
+        <label class="blank-item item-label">See the Doctor</label>
+        <input class="blank-item input-form" type="text">
         <button class="btn-edit">Edit</button>
         <button class="btn-delete">
-          <img class="btn-delete-icon" src="./remove.svg">
+          <img class="btn-delete__icon" src="./remove.svg">
         </button>
       </li>
     </ul>
