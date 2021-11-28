@@ -5,7 +5,7 @@
     font-family: Lato, sans-serif;
 }
 
-.img-details  {
+.img-details {
     width: 500px;
     margin: 0 auto;
     display: block;
@@ -22,8 +22,11 @@
 }
 
 @media (max-width:768px) {
-.img-details { text-align: center;
-}
+
+    .img-details { 
+        text-align: center;
+    }
+
 }
 
 .main-page {
@@ -147,7 +150,7 @@ input {
     width: 226px;
 }
 
-.input-form  {
+.input-form {
     width: 226px
 }
 
@@ -168,7 +171,7 @@ input {
 }
 
 /* Edit Task */
-.task-item .input-form{
+.task-item .input-form {
     display: none;
 }
 
