@@ -36,7 +36,7 @@
     padding: 16px 0 0 0;
 }
 
-.task {
+.blank-item {
     width: 56%;
     display: inline-block;
     flex-grow: 1
@@ -52,10 +52,8 @@
     padding: 0px;
 }
 
-.incomplete-tasks,
-.edit-mode,
-.completed-item,
-.todo-text
+.task-item,
+.todo-text,
 .complete-text {
     list-style:none;
 }
@@ -96,10 +94,7 @@ input {
     text-transform: uppercase;
 }
 
-.task-form__input,
-.incomplete-item__input,
-.edit-mode__input,
-.completed-item__input {
+.input-form {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -112,10 +107,7 @@ input {
     color: #888;
 }
 
-.task-form__input:focus,
-.incomplete-item__input:focus,
-.edit-mode__input:focus,
-.completed-item__input:focus {
+.input-form:focus {
     color: #333;
 }
 
@@ -130,7 +122,7 @@ input {
 }
 
 /* Task list */
-li {
+.task-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -140,7 +132,7 @@ li {
     align-items: center;
 }
 
-li > * {
+.task-item > * {
     vertical-align: middle;
 }
 
@@ -148,50 +140,43 @@ li > * {
     margin: 0 10px;
 }
 
-.incomplete-item__task,
-.edit-mode__task,
-.completed-item__task {
+.item-label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-.task-form__input,
-.incomplete-item__input,
-.edit-mode__input,
-.completed-item__input  {
+.input-form  {
     width: 226px
 }
 
-.btn-delete img {
+.btn-delete__icon {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.btn-delete img:hover {
+.btn-delete__icon:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-.completed-item__task {
+.completed-tasks .item-label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-.incomplete-item__input,
-.edit-mode__input,
-.completed-item__input {
-    display:none
+.task-item .input-form{
+    display: none;
 }
 
-.edit-mode__input {
+.tasks .edit-mode .input-form {
     display:inline-block;
     width:224px
 }
 
-.edit-mode__task {
-    display:none;
+.edit-mode .item-label {
+    display: none;
 }
