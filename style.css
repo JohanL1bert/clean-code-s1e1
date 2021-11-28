@@ -39,7 +39,7 @@
 .blank-item {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .task-form {
@@ -55,12 +55,12 @@
 .task-item,
 .todo-text,
 .complete-text {
-    list-style:none;
+    list-style: none;
 }
 
 button,
 input {
-    outline:none;
+    outline: none;
 }
 
 .btn-add,
@@ -173,8 +173,8 @@ input {
 }
 
 .tasks .edit-mode .input-form {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .edit-mode .item-label {
